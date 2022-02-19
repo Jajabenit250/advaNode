@@ -1,0 +1,24 @@
+{
+  "name": "advanode",
+  "version": "1.0.0",
+  "description": "advanced node concepts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jajabenit250/advaNode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jajabenit250/advaNode/issues"
+  },
+  "homepage": "https://github.com/Jajabenit250/advaNode#readme",
+  "dependencies": {
+    "emailjs": "^3.7.0",
+    "express": "^4.17.3",
+    "pdfkit": "^0.13.0"
+  }
+}
