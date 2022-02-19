@@ -1,11 +1,11 @@
-process.env.UV_THREAD_POOL_SIZE = 10;
-const cluster = require('cluster');
+// process.env.UV_THREAD_POOL_SIZE = 10;
+// const cluster = require('cluster');
 
-if(cluster.isMaster){
-    cluster.fork();
-    // cluster.fork();
-    // cluster.fork();
-} else {
+// if(cluster.isMaster){
+//     cluster.fork();
+//     // cluster.fork();
+//     // cluster.fork();
+// } else {
     const express = require('express');
 const app = express();
 const { createPDF } = require("./pdfCreator.js");
@@ -59,4 +59,4 @@ app.get('/new', (req, res) => {
 })
 
 app.listen(3000);
-}
+// }
