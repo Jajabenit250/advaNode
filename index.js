@@ -6,7 +6,7 @@
 //     // cluster.fork();
 //     // cluster.fork();
 // } else {
-    const express = require('express');
+const express = require('express');
 const app = express();
 const { createPDF } = require("./pdfCreator.js");
 
@@ -53,7 +53,7 @@ app.get('/new', (req, res) => {
       invoice_nr: 1234
     };
     
-    createPDF(invoice, "invoice.pdf");
+    createPDF(invoice, `documents/${Math.random()}/`, `invoice.pdf`);
     console.log("invoice done");
     res.send("new Request");
 })
